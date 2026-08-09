@@ -108,7 +108,7 @@ typedef struct PntosStandardFusionStrategy {
 	/**
 	 * Propagates the state estimate and covariance forward one time epoch using the given dynamics
 	 * model. #get_num_states must return a value greater than zero before this method can be
-	 * called. Also, the H matrix in \p dynamics_model must have a number of columns equal to the
+	 * called. Also, the Phi matrix in \p dynamics_model must have a number of columns equal to the
 	 * value returned by #get_num_states.
 	 */
 	void (*propagate)(struct PntosStandardFusionStrategy* self,
@@ -117,7 +117,7 @@ typedef struct PntosStandardFusionStrategy {
 	/**
 	 * Updates the state estimate and covariance at the current time using the given measurement
 	 * model. #get_num_states must return a value greater than zero before this method can be
-	 * called. Also, the Phi matrix in \p measurement_model must have a number of columns equal to
+	 * called. Also, the H matrix in \p measurement_model must have a number of columns equal to
 	 * the value returned by #get_num_states.
 	 */
 	void (*update)(struct PntosStandardFusionStrategy* self,
