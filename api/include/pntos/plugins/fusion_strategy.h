@@ -57,7 +57,7 @@ typedef struct PntosStandardFusionStrategy {
 
 	/**
 	 * Decrease the number of states by \p count, starting at \p first_index. \p first_index plus \p
-	 * count cannot be greater than or equal to the value returned by #get_num_states.
+	 * count cannot be greater than the value returned by #get_num_states.
 	 */
 	void (*remove_states)(struct PntosStandardFusionStrategy* self,
 	                      size_t first_index,
