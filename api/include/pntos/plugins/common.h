@@ -167,7 +167,7 @@ typedef struct PntosDoubleArray {
 	double* data;
 	/**
 	 * The number of doubles stored in #data. For example, `data[num_doubles-1]` points to the last
-	 * int stored in this structure.
+	 * double stored in this structure.
 	 */
 	size_t num_doubles;
 
