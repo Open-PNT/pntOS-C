@@ -350,6 +350,9 @@ typedef enum PntosPluginTypes {
 	 * database plugin that encapsulated tiles of elevation data which is available for query by any
 	 * other plugin.
 	 *
+	 * This plugin type is currently a placeholder. Its API is undefined in this version of
+	 * pntOS, to be defined in a future version.
+	 *
 	 * **UNSTABLE**: This feature is unstable and is not yet considered part of the stable pntOS
 	 * API. Usage of this feature is highly discouraged in non-experimental code, and its definition
 	 * may change at any time.
@@ -495,6 +498,9 @@ typedef enum PntosFusionType {
 	 * particles) and that propagate/update functions will receive these samples and be able to
 	 * arbitrarily modify each particle's weight, location, and add arbitrary noise to them.
 	 *
+	 * This model is currently a placeholder. No corresponding structs are defined in this
+	 * version of pntOS.
+	 *
 	 * **UNSTABLE**: This feature is unstable and is not yet considered part of the stable pntOS
 	 * API. Usage of this feature is highly discouraged in non-experimental code, and its definition
 	 * may change at any time.
@@ -504,6 +510,9 @@ typedef enum PntosFusionType {
 	 * The time delayed model of fusion within pntOS. This model assumes that information about a
 	 * state is retained across different time epochs and that historical estimate data is available
 	 * for processing current time data.
+	 *
+	 * This model is currently a placeholder. No corresponding structs are defined in this
+	 * version of pntOS.
 	 *
 	 * **UNSTABLE**: This feature is unstable and is not yet considered part of the stable pntOS
 	 * API. Usage of this feature is highly discouraged in non-experimental code, and its definition
@@ -515,6 +524,9 @@ typedef enum PntosFusionType {
 	 * standard model, with the exception that model information is not available in function
 	 * pointers on the machine itself but instead binary blobs which have been pre-compiled. This
 	 * mode is intended to facilitate usage in environments such as GPGPU filter implementations.
+	 *
+	 * This model is currently a placeholder. No corresponding structs are defined in this
+	 * version of pntOS.
 	 *
 	 * **UNSTABLE**: This feature is unstable and is not yet considered part of the stable pntOS
 	 * API. Usage of this feature is highly discouraged in non-experimental code, and its definition
